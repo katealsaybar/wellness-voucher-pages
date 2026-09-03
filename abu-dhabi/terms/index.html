@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head> <link rel="preload" as="font" type="font/woff2" crossorigin href="../../assets/fonts/playfair-display-500.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../assets/fonts/inter-300.woff2"><style id="fonts">/* Local WOFF2 font faces (shared with the AE landing page, no Google Fonts). */
+@font-face{ font-family:'Inter';font-style:normal;font-weight:300 600;font-display:swap;src:url(../../assets/fonts/inter-300.woff2) format('woff2') }
+@font-face{ font-family:'Playfair Display';font-style:normal;font-weight:500;font-display:swap;src:url(../../assets/fonts/playfair-display-500.woff2) format('woff2') }
+@font-face{ font-family:'Playfair Display';font-style:italic;font-weight:500;font-display:swap;src:url(../../assets/fonts/playfair-display-500-italic.woff2) format('woff2') }</style><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#FAF8F4"><title>Wellness Voucher Terms & Conditions · Abu Dhabi · Tara Rose</title><meta name="description" content="Terms and conditions for the Abu Dhabi Wellness Voucher at Tara Rose."><meta name="robots" content="index,follow"><meta property="og:type" content="website"><meta property="og:title" content="Wellness Voucher Terms & Conditions · Abu Dhabi · Tara Rose"><meta property="og:description" content="Terms and conditions for the Abu Dhabi Wellness Voucher at Tara Rose."><meta property="og:url" content="https://www.tararosesalon.com/en/ae/wellness-voucher/abu-dhabi/terms/"><meta property="og:locale" content="en_GB"><meta property="og:site_name" content="Tara Rose"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Wellness Voucher Terms & Conditions · Abu Dhabi · Tara Rose"><meta name="twitter:description" content="Terms and conditions for the Abu Dhabi Wellness Voucher at Tara Rose."><meta name="geo.region" content="AE"><style id="site">/* --site-* are the LIVE tararosesalon.com values, read off /en/ae/wellness-voucher/ on
+     7 Aug 2026 with getComputedStyle. 96px section padding, Playfair at weight 400, the
+     1180px container and the mint #7CE8D2 are what the real page uses. Everything else is
+     the approval pack's own review furniture, kept in the pack palette on purpose. */
+  :root{
+    --site-sand:#F1ECE3; --site-paper:#FAF8F4; --site-dark:#1C1B18; --site-ink:#2D2E37;
+    --site-green:#1C7563; --site-mint:#7CE8D2; --site-mint-ink:#0E2A25;
+    --site-line:rgba(45,46,55,.12);
+    --site-card-shadow:0 1px 0 0 rgba(255,255,255,.72) inset,
+                       0 -1px 0 0 rgba(28,26,22,.05) inset,
+                       0 2px 6px -2px rgba(28,26,22,.06);
+    --bg:#FAF8F4; --paper:#FFFFFF; --ink:#2D2E37; --muted:#6E6E77;
+    --line:#E7E2D8; --sand:#F1ECE3; --dark:#2D2E37;
+    --amber:#B4823A; --amber-bg:#FBF3E2; --blue:#3B6E8F; --blue-bg:#E6F0F5;
+    --green:#3E7A5E; --green-bg:#E4F1EA; --red:#B24A4A;
+    --serif:'Playfair Display',Georgia,serif;
+    --sans:'Inter',system-ui,-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--sand);color:var(--ink);line-height:1.7;font-size:15.5px;}
+  a{color:inherit;}
+
+  /* ============================ review chrome ============================ */
+  /* ONE sticky row: brand, voucher switch, diff toggle and the widget's "You are" bar.
+     Order values, not source order, arrange it: the widget appends its bar last. */
+  .top{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line);}
+  .top .inner{
+    max-width:1440px;margin:0 auto;padding:9px 24px;
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  }
+  /* aspect-ratio, not height:auto. The source PNG is 720x211 and until it loads an
+     auto height has no ratio to work from, so the header laid out ~450px tall on first
+     paint. Anything measuring the header (the sticky offset below) then read that
+     wrong value and never recovered. */
+  .brandlogo{order:1;width:62px;height:auto;aspect-ratio:720/211;flex:0 0 auto;}
+  h1.pagetitle{order:2;margin:0 auto 0 0;font-family:var(--serif);font-size:16px;font-weight:600;line-height:1.3;}
+  .top .inner > .trs-idbar{order:3;margin:0;padding:0;border-top:0;gap:8px;}
+  .swlabel{order:4;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+  .switch{
+    order:5;display:flex;background:var(--sand);border:1px solid var(--line);
+    border-radius:100px;padding:3px;gap:3px;margin-left:-8px;
+  }
+  .switch button{
+    font:inherit;font-size:13px;font-weight:700;border:0;background:transparent;color:var(--muted);
+    padding:7px 15px;border-radius:100px;cursor:pointer;transition:background .15s,color .15s;
+  }
+  .switch button.on{background:var(--dark);color:#fff;}
+  .diffbtn{
+    order:6;font:inherit;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;
+    border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:100px;padding:8px 16px;
+  }
+  .diffbtn.on{background:var(--amber-bg);border-color:#E4CC9A;color:var(--amber);}
+  .back{order:7;font-size:12.5px;font-weight:600;color:var(--muted);text-decoration:none;white-space:nowrap;}
+  .back:hover{color:var(--ink);}
+
+  .band{max-width:1280px;margin:0 auto;padding:0 24px;}
+  .howto{margin:16px 0 0;}
+  .howto summary{font-size:12.5px;font-weight:600;color:var(--muted);cursor:pointer;list-style:none;}
+  .howto summary::-webkit-details-marker{display:none;}
+  .howto summary::before{content:"\25B8  ";}
+  .howto[open] summary::before{content:"\25BE  ";}
+  .hint{font-size:13px;color:var(--muted);max-width:820px;padding:6px 0 2px;}
+  .note{
+    background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--line);
+    border-radius:0 10px 10px 0;padding:11px 15px;margin:12px 0;font-size:13.5px;
+  }
+  .note.flag{border-left-color:var(--amber);background:var(--amber-bg);}
+  .note.good{border-left-color:var(--green);background:var(--green-bg);}
+  .note.info{border-left-color:var(--blue);background:var(--blue-bg);}
+
+  /* ============================ browser frame ============================ */
+  .browser{
+    max-width:1280px;margin:20px auto 60px;background:var(--site-sand);
+    border:1px solid #DCD6CA;border-radius:14px;overflow:hidden;
+    box-shadow:0 24px 60px rgba(45,46,55,.13);
+  }
+  .chrome{display:flex;align-items:center;gap:12px;padding:11px 14px;background:#EDE8DE;border-bottom:1px solid #DCD6CA;}
+  .lights{display:flex;gap:6px;flex-shrink:0;}
+  .lights i{width:11px;height:11px;border-radius:50%;background:#C9C2B4;display:block;}
+  .urlbar{
+    flex:1;background:#fff;border:1px solid #DCD6CA;border-radius:100px;padding:6px 14px;
+    font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .urlbar b{color:var(--ink);font-weight:600;}
+
+  /* ======================= the mocked page (live system) ================== */
+  .site{background:var(--site-sand);color:var(--site-ink);font-size:15px;line-height:1.4;}
+  .site .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .site .col{max-width:760px;}
+
+  .sitenav{background:var(--site-paper);border-bottom:1px solid var(--site-line);padding:18px 0;}
+  .sitenav .wrap{display:flex;align-items:center;gap:18px;}
+  .wordmark{font-family:var(--serif);font-weight:400;font-size:21px;letter-spacing:.28em;line-height:1;}
+  .wordmark small{display:block;font-size:9px;letter-spacing:.34em;color:var(--muted);margin-top:5px;text-align:center;}
+  .navspacer{margin-left:auto;}
+  .navlink{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px;}
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;background:var(--site-mint);color:var(--site-mint-ink);
+    text-decoration:none;border-radius:100px;padding:14px 24px;
+    font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+  }
+
+  .sect{padding:96px 0;}
+  .sect.dark{background:var(--site-dark);color:#F1ECE3;}
+  .eyebrow{font-size:14px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;color:var(--site-green);margin-bottom:18px;}
+  .dark .eyebrow{color:var(--site-mint);}
+  /* Playfair at 400, not 600. The live page sets the display face regular and lets the
+     size carry it. Bolding it is the single thing that most makes a copy look wrong. */
+  .display{font-family:var(--serif);font-weight:400;letter-spacing:-.022em;line-height:1.03;font-size:clamp(34px,4.4vw,62px);}
+  .display em{font-style:italic;font-weight:400;}
+  .lede{font-size:16px;line-height:1.65;margin-top:22px;color:#4A4B52;}
+  .dark .lede{color:#C4C0B8;}
+  .microline{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#8A867E;margin-top:26px;}
+
+  /* the clauses */
+  ol.terms{list-style:none;counter-reset:t;margin-top:8px;}
+  ol.terms > li{
+    counter-increment:t;position:relative;padding:0 0 30px 62px;margin-bottom:30px;
+    border-bottom:1px solid var(--site-line);font-size:14.5px;line-height:1.7;color:#54555C;
+  }
+  ol.terms > li:last-child{border-bottom:0;}
+  ol.terms > li::before{
+    content:counter(t);position:absolute;left:0;top:-2px;
+    width:38px;height:38px;border-radius:50%;background:var(--site-paper);
+    border:1px solid var(--site-line);box-shadow:var(--site-card-shadow);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--serif);font-size:16px;font-weight:400;color:var(--site-ink);
+  }
+  ol.terms > li strong.th{
+    display:block;font-family:var(--serif);font-size:24px;font-weight:400;letter-spacing:-.01em;
+    color:var(--site-ink);margin-bottom:10px;
+  }
+  ol.terms > li em.src{display:block;margin-top:12px;color:var(--site-ink);font-style:normal;font-weight:600;font-size:13.5px;}
+
+  .card{
+    background:var(--site-paper);border:1px solid var(--site-line);border-radius:12px;
+    padding:26px 22px;box-shadow:var(--site-card-shadow);
+  }
+  .terms table{width:100%;border-collapse:collapse;margin:18px 0 10px;font-size:13.5px;border: 0;}
+  .terms td {border-right: none;}
+  th,td{border-bottom:1px solid var(--site-line);padding:11px 12px;text-align:left;}
+  th{
+    font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+    color:var(--site-green);border-bottom-color:var(--site-line);
+  }
+  td.num{text-align:right;white-space:nowrap;font-weight:600;color:var(--site-ink);border-right:none;}
+  .tot{font-family:var(--serif);font-size:19px;font-weight:600;}
+
+  .opt{
+    background:var(--site-paper);border:1px solid var(--site-line);border-radius:12px;
+    padding:20px 22px;margin:14px 0;font-size:14px;line-height:1.7;box-shadow:var(--site-card-shadow);
+  }
+  .opt .ol{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#8A867E;margin-bottom:10px;}
+  .opt.pick{border-color:rgba(28,117,99,.4);}
+  .opt.pick .ol{color:var(--site-green);}
+
+  .foot{
+    background:var(--site-dark);color:#8A867E;padding:44px 0;
+    font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;line-height:2.1;
+  }
+  .foot a{color:var(--site-mint);}
+
+  /* diff mode */
+  .tag{
+    display:none;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+    border-radius:100px;padding:3px 9px;margin-bottom:10px;
+  }
+  .tag.new{background:var(--green-bg);color:var(--green);border:1px solid #BFDCCC;}
+  .tag.chg{background:var(--amber-bg);color:var(--amber);border:1px solid #E4CC9A;}
+  .tag.dec{background:var(--blue-bg);color:var(--blue);border:1px solid #BBD6E4;}
+  body.diff .tag{display:inline-block;}
+  body.diff li[data-changed]{outline:2px dashed var(--amber);outline-offset:10px;border-radius:6px;}
+
+  /* ============================ the note pin ============================= */
+  /* The widget's floated pin is icon-only at 60% opacity, which is right on a dense
+     document and invisible on a full-page mockup. Here it is a labelled mint pill at full
+     strength, because leaving notes IS the job on this page. The label is added in CSS:
+     the widget deliberately omits the word on floated pins. */
+  .trs-pin-float{
+    top:10px;right:10px;opacity:1;
+    background:var(--site-mint);border-color:var(--site-mint);color:var(--site-mint-ink);
+    padding:9px 17px;font-size:10.5px;letter-spacing:.12em;gap:8px;
+    box-shadow:0 4px 14px rgba(28,26,22,.18);
+  }
+  .trs-pin-float::after{content:"Note";}
+  .trs-pin-float svg{width:15px;height:15px;}
+  .trs-pin-float:hover{background:#5FD9C0;border-color:#5FD9C0;color:var(--site-mint-ink);}
+  .trs-pin-float.has-notes{background:var(--amber);border-color:var(--amber);color:#fff;}
+  .trs-pin-clear{padding-right:96px;}
+
+  /* hide the voucher you are NOT reading, so each visible block keeps its own display */
+  body.v-ad .only-dxb{display:none !important;}
+  body.v-dxb .only-ad{display:none !important;}
+
+  .trs-pin-host{
+    background: var(--site-paper);
+    border: 1px solid var(--site-line);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin: 14px 0;
+    font-size: 14px;
+    line-height: 1.7;
+    box-shadow: var(--site-card-shadow);
+  }
+
+  .opt .ol {
+    font-size: 10.5px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #8A867E;
+    margin-bottom: 10px;
+}
+
+ol.terms > li em.src {
+    display: block;
+    margin-top: 12px;
+    color: var(--site-ink);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.5px;
+}
+
+  @media(max-width:1000px){ .sect{padding:64px 0;} }
+  @media(max-width:820px){
+    .browser{border-radius:0;margin-left:-24px;margin-right:-24px;max-width:none;}
+    .sitenav .wrap{flex-wrap:wrap;gap:12px;}
+    ol.terms > li{padding-left:0;padding-top:48px;}
+    ol.terms > li::before{top:0;}
+    /* Six columns of tier detail cannot fit 360px. Found by the phone view on
+       8 Aug: term 4's table was pushing the whole page 135px wider than the
+       screen, so every clause scrolled sideways. Let the table scroll inside its
+       own box instead: the same fix the approval pack itself already uses. */
+    .terms table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  }
+
+  /* ============================ handset (≤520px) ============================
+     Same design, re-proportioned for 360px: 96px section padding is a quarter of
+     the screen spent on nothing, and a 24px serif clause heading over a 38px
+     number circle leaves almost no room for the clause itself. 520 rather than
+     820 because a tablet has the room for the desktop proportions. */
+  @media(max-width:520px){
+    .site .wrap{padding:0 18px;}
+
+    .sitenav{padding:12px 0;}
+    .sitenav .wrap{flex-wrap:wrap;gap:10px;}
+    .wordmark{font-size:15px;letter-spacing:.18em;}
+    .wordmark small{font-size:7px;letter-spacing:.26em;margin-top:3px;}
+    .navspacer{display:none;}
+    .navlink{font-size:9.5px;}
+    .sitenav .pill{padding:10px 15px;font-size:9.5px;letter-spacing:.1em;}
+
+    .sect{padding:38px 0 42px;}
+    .eyebrow{font-size:10.5px;letter-spacing:.12em;line-height:1.5;margin-bottom:12px;}
+    .display{font-size:31px;line-height:1.08;}
+    .lede{font-size:15px;margin-top:14px;}
+    .microline{margin-top:18px;font-size:10px;}
+
+    /* the clauses. The number circle already sits above the heading on a narrow
+       screen; it just needs to be smaller and closer. */
+    ol.terms > li{padding-top:42px;padding-bottom:22px;margin-bottom:22px;font-size:14px;}
+    ol.terms > li::before{width:32px;height:32px;font-size:14px;}
+    ol.terms > li strong.th{font-size:20px;margin-bottom:8px;}
+    .opt{padding:16px 16px;font-size:13.5px;}
+    .foot{padding:32px 0;line-height:1.9;}
+  }
+
+
+
+/* Skip-to-content link (screen reader / keyboard nav). */
+.skip:focus{ position:fixed !important; left:12px !important; top:12px !important; width:auto !important; height:auto !important; background:var(--site-ink,#2D2E37); color:#fff; padding:12px 20px; border-radius:100px; z-index:9999; }</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <meta name="viewport" content="width=device-width, initial-scale=1"><title>Terms | Tara Rose Salon</title><meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta property="og:title" content="Terms" /><meta property="og:url" content="https://www.tararosesalon.com/en/ae/wellness-voucher/abu-dhabi/terms/" /><meta property="og:site_name" content="Tara Rose Salon" /><meta property="article:publisher" content="https://www.facebook.com/tararosesalon/" /><meta property="article:modified_time" content="2026-08-11T11:53:04+00:00" /><meta property="og:image" content="https://www.tararosesalon.com/wp-content/uploads/2025/12/best-salon-in-abu-dhabi.jpg" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:type" content="image/jpeg" /><meta name="twitter:card" content="summary_large_image" />     <meta name="apple-mobile-web-app-title" content="Tara Rose Salon" /><meta name="ahrefs-site-verification" content="bd94f14953e86c2e1d403c528cfc6186ebff8af961b70e75ab5fbc5796f16001"> <meta name="msapplication-TileImage" content="https://www.tararosesalon.com/wp-content/uploads/2026/06/cropped-tara-rose-favcion-270x270.png" />
+<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg"><link rel="icon" type="image/png" sizes="96x96" href="../../assets/favicon-96x96.png"><link rel="shortcut icon" href="../../assets/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+</head>
+<body>
+<a href="#main" class="skip" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a><main id="main"><div class="site"><div class="sitenav"><div class="wrap"><div class="wordmark">TARA ROSE<small>UAE</small></div>
+<span class="navspacer"></span>
+<a class="navlink" href="../">Back to the voucher →</a>
+<a class="pill" href="../">Reserve your voucher</a></div></div><div class="sect dark"><div class="wrap"><div class="eyebrow">The Wellness Voucher · <span class="">Abu Dhabi</span></div><h2 class="display">Terms &amp; <em>Conditions.</em></h2><div class="col"><p class="lede">These terms apply to the Abu Dhabi Wellness Voucher, redeemable at Mamsha al Saadiyat and Khalifa City A. Our Dubai salons run a separate voucher with its own terms.</p></div><div class="microline">Purchase closes 30 September 2026</div></div></div><div class="sect"><div class="wrap"><main class="col"><ol class="terms"><li>
+<strong class="th">Campaign period.</strong>
+The Wellness Voucher is available to purchase until 30 September 2026. Credit purchased within the window can be redeemed at any point inside the validity period of the voucher you bought, including after the window closes.</li><li data-changed="">
+<strong class="th">Participating salons.</strong>
+<span class="">The Abu Dhabi Wellness Voucher can be redeemed at Tara Rose Mamsha al Saadiyat and Tara Rose Khalifa City A. Both salons offer the full hair and beauty menu, including all facials.</span></li><li data-changed="">
+<strong class="th">Which voucher you hold.</strong>
+<span class="">This voucher is held against our Abu Dhabi salons. Credit, bonus credit and the included benefits are redeemable at Mamsha al Saadiyat and Khalifa City A only, and cannot be redeemed at our Dubai salons or exchanged for the Dubai voucher. If you bought the wrong voucher, contact us before your first redemption and we will do our best to put it right.</span></li><li>
+<strong class="th">Voucher options &amp; validity.</strong><table><thead><tr><th>Tier</th><th class="num">Prepaid</th><th class="num">Bonus</th><th class="num">Total credit</th><th>Valid</th><th>Tabby</th></tr></thead><tbody><tr><td>Dip Your Toes</td><td class="num">AED 1,000</td><td class="num">AED 150</td><td class="num tot">AED 1,150</td><td>6 months</td><td>No</td></tr><tr><td>Season of You</td><td class="num">AED 2,500</td><td class="num">AED 500</td><td class="num tot">AED 3,000</td><td>9 months</td><td>4 interest-free</td></tr><tr><td>All-In VIP Year</td><td class="num">AED 4,500</td><td class="num">AED 900</td><td class="num tot">AED 5,400</td><td>12 months</td><td>4 interest-free</td></tr></tbody></table>
+Validity runs from the date of purchase. Dip Your Toes must be paid in full; Tabby is not available on that tier. Season of You and All-In VIP Year are eligible for four interest-free payments through Tabby, subject to Tabby approval and terms.</li><li data-changed=""><strong class="th">Using your credit.</strong>
+The prepaid credit can be used towards salon services at the participating salons named in term 2, at the Tara Rose menu price applicable at the time of the appointment. In Abu Dhabi this covers hair, colour, beauty, treatments and facials at either salon. Credit cannot be used towards home care or any other product purchase, the purchase of new hair extensions, or cash withdrawals or cash refunds. Which colour services the credit reaches depends on your voucher, as set out in term 6. For Season of You and All-In VIP Year, the Self-Care Bonus can be redeemed against beauty services, treatments, keratin services and blowdries only.</li><li data-changed=""><strong class="th">Colour: which services your voucher reaches.</strong>
+Colour follows the salon’s own three-step plan ladder, and each voucher reaches one step further than the one below it. <strong>Every voucher includes everything on the steps beneath it</strong>. A colour service above your step can still be booked and settled in the usual way, outside your credit.<div class="opt trs-pin-host" style="margin-top: 12px; position: relative;"><div class="ol trs-pin-clear">Dip Your Toes reaches Soft Blonde and Polished Brunette</div>
+Root retouch and regrowth colour. All-over and single-process colour. Toner, gloss and glaze. Tonal maintenance.</div><div class="opt trs-pin-host" style="margin-top: 12px; position: relative;"><div class="ol trs-pin-clear">Season of You adds Signature Blonde and Dimensional Brunette</div>
+Balayage and other freehand or hand-painted placement. Highlights, foils and babylights, full head or half head. Grey blending. Multi-tonal depth.</div><div class="opt trs-pin-host" style="margin-top: 12px; position: relative;"><div class="ol trs-pin-clear">All-In VIP Year adds Transformation Blonde and Luxury Brunette</div>
+Full colour transformation. Colour correction and colour removal. High lift and full-head lightening. Fantasy colour. Big-contrast change.</div><em class="src">Settled 19 August, and built on the salon’s existing plan ladder rather than a separate list, so the names here are the ones your stylist already uses. Cuts, blow-dry and styling, keratin and smoothing, and bond, strength, hydration and scalp treatments are covered on every voucher and are not part of this ladder. There is no per-visit spending cap on colour of any kind: this term is a ladder of services, not a limit on an amount. Where a service is not named above, the salon will tell you which step it falls on before your appointment, never at the till.</em></li><li>
+<strong class="th">Included gifts &amp; benefits.</strong>
+Complimentary gifts and benefits are additional to the service credit and have no cash value. Where included with the selected voucher, these may include Confidence Mapping, birthday treatments, journals, priority access to selected last-minute beauty appointments, gift vouchers for friends, and referral rewards. Physical gifts are subject to availability; Tara Rose may substitute an unavailable complimentary item with an alternative of similar value.</li><li data-changed="">
+<strong class="th">Home Ritual Kit allowance.</strong>
+Each voucher includes a home care allowance towards your Home Ritual Kit, set by tier: AED 100 with Dip Your Toes, AED 200 with Season of You and AED 450 with All-In VIP Year. The allowance is redeemable against home care, the take-home products recommended for you, at the salons named on your voucher, and where the home care recommended for you comes to more than the allowance, the difference is payable when you collect your kit. We tell you the difference before anything is packed, never after. If you would rather keep it as small as possible, tell us before your kit is packed and we will build it to the fewest items that will work. The allowance is separate from your service credit: it cannot be spent on services, and your service credit cannot be spent on home care. Any unused part of the allowance has no cash value, cannot be exchanged or transferred, and ends with the validity period of your voucher.</li><li data-changed="">
+<strong class="th">Gift vouchers.</strong>
+The gift vouchers included with your Wellness Voucher are issued digitally and sent by email, in your name, to the people you nominate. Nothing is posted or printed. Dip Your Toes includes one card of AED 100, Season of You three cards of AED 100, and All-In VIP Year five cards of AED 100. Each card can be redeemed against an eligible salon service at the same participating salons named in term 2, cannot be exchanged for cash, and cannot be used to purchase retail products or another voucher. <strong>Each card is valid for two months from the date you buy your Wellness Voucher</strong>, not from the date you pass it on, so give it to your friend early: a card handed over late will have less than two months left on it. The expiry date is printed on the card. The main Wellness Voucher credit cannot be transferred to another person unless otherwise agreed by Tara Rose.</li><li>
+<strong class="th">Referral rewards.</strong>
+Referral credit is awarded when the required number of new clients successfully visit Tara Rose and complete a qualifying paid appointment. Referral credit is issued once the referral is complete, meaning the new client has visited and paid, and is then <strong>valid for two months from that date</strong>. It runs on its own clock rather than expiring with your Wellness Voucher, so referring a friend late in your validity period does not shorten what you earn. Referral rewards cannot be exchanged for cash.</li><li data-changed="">
+<strong class="th">Birthday benefits.</strong>
+Birthday services must be redeemed during the validity period of your voucher and are subject to appointment availability. In Abu Dhabi the birthday facial is a full facial of your choice from our Abu Dhabi menu. The values shown within the campaign represent the standard menu value of the relevant service and are included to illustrate the overall voucher value.</li><li data-changed="">
+<strong class="th">Appointments, cancellations &amp; no-shows.</strong>
+All appointments remain subject to Tara Rose's standard booking, cancellation and no-show policies. Voucher ownership or priority access does not guarantee appointment availability with a particular stylist, therapist, date or time.</li><li>
+<strong class="th">Expiry.</strong>
+Your service credit and bonus credit must be redeemed within the stated validity period for the Wellness Voucher you bought: six months on Dip Your Toes, nine months on Season of You and twelve months on All-In VIP Year, each running from the date of purchase. <strong>Two benefits run on their own clocks and are not covered by that period:</strong> the gift cards for your friends, which last two months from the date you buy, and referral credit, which lasts two months from the date a referral completes. Any unused balance or promotional benefits remaining after the relevant expiry date will expire and cannot be exchanged for cash or extended unless Tara Rose agrees otherwise.</li><li>
+<strong class="th">Refunds &amp; exchanges.</strong>
+Wellness Vouchers are non-refundable once purchased, except where otherwise required by applicable law. Voucher credit and promotional bonuses cannot be exchanged for cash.</li><li>
+<strong class="th">Other offers.</strong>
+Wellness Voucher credit, bonuses and complimentary benefits cannot be combined with another promotion, discount or offer unless Tara Rose specifically confirms otherwise.</li><li>
+<strong class="th">Tabby payments.</strong>
+Where Tabby is offered, approval and payment arrangements are provided directly by Tabby and are subject to Tabby's eligibility requirements and terms. Using Tabby does not change the amount of Tara Rose service credit included within the selected Wellness Voucher.</li><li>
+<strong class="th">Pricing.</strong>
+All prices and values shown are in UAE Dirhams (AED) and include applicable VAT.</li><li>
+<strong class="th">General.</strong>
+Tara Rose reserves the right to reasonably amend or clarify these terms where required for the administration of the campaign, provided that this does not remove service credit already purchased by a client. Purchase of a Wellness Voucher confirms acceptance of these Terms & Conditions.</li></ol></main></div></div><div class="foot"><div class="wrap">
+<span class="">Tara Rose · Abu Dhabi Wellness Voucher · Mamsha al Saadiyat and Khalifa City A · <a href="../">Back to the voucher</a></span></div></div></div></main>
+</body>
+</html>
