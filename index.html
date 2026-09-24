@@ -2382,6 +2382,9 @@ src="https://www.facebook.com/tr?id=749435331517881&ev=PageView&noscript=1"></no
 .vs-left[hidden]{ display:none }
 /* Two rules stacked above the footer small print: the link grid's bottom border and this one's top border. Keep one. */
 .foot__legal{ border-top:0; margin-top:0 }
+/* The footer grid had three columns for four blocks, so Connect dropped to a row of its own. */
+@media (min-width:1024px){ .foot .row{ grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px } }
+@media (min-width:781px) and (max-width:1023px){ .foot .row{ grid-template-columns:1fr 1fr } }
 /* (optional) / (required) floated far right of the checkbox text; they now sit under it. */
 .pdpl__label{ display:block !important }
 .pdpl__group{ align-items:flex-start !important }
