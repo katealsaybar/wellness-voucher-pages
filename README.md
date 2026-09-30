@@ -1,12 +1,10 @@
-# Wellness Voucher pages
+# Wellness Voucher pages (moved)
 
-The Wellness Voucher landing page (one page for Dubai and Abu Dhabi) plus the two terms pages, with every asset served locally.
+Since 30 Sep 2026 the Wellness Voucher landing page and its single terms page live on the dashboard domain:
 
-- `index.html` the landing page. Since 24 Sep 2026 its design and copy follow Tara's version at tararose83.github.io/tara-rose-pages/wellness-voucher/, with the WV Landing Page Call outs revisions applied and the reserve form wired to the live GHL webhook and Stripe links
-- `abu-dhabi/` and `dubai/` redirect stubs to `index.html`
-- `abu-dhabi/terms/` and `dubai/terms/`
-- `assets/` images, fonts, favicons (identical to the theme assets on the live site)
+- https://trk-salon-os.com/wellness-voucher/
+- https://trk-salon-os.com/wellness-voucher/terms/
 
-Kept from the live pages: GTM, Meta pixel, Clarity, the reserve form (LeadConnector webhook + Stripe links). Removed: jQuery, LiteSpeed cache scripts, WPML, Yoast schema, the theme search modal.
+The real copy is in `katealsaybar/tararosesalon-dashboard-all` under `wellness-voucher/`. Edit it there.
 
-Source snapshots taken 3 Sep 2026.
+Every page in this repo is now a redirect stub that carries the query string and hash across, so old links and UTM-tagged ads keep working. The Abu Dhabi and Dubai terms both point at the one terms page, and `404.html` sends any other path to the landing page. `assets/` stays in place in case anything still links to an image here.
